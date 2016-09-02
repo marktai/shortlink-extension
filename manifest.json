@@ -1,0 +1,27 @@
+{
+  "manifest_version": 2,
+  "name": "marktai.com Shortlink Generator",
+  "version": "1.0.1",
+
+  "description": "Generates a marktai.com shortlink for a given URL",
+  "icons": { 
+    "128": "icon.png"
+  },
+
+  "browser_action": {
+    "default_title": "Generate shortlink",
+    "default_icon" : "icon.png",
+    "default_popup": "popup.html"
+  },
+
+  "background": {
+    "scripts": ["background.js"]
+  },
+  "permissions": [
+    "http://*/*", 
+    "https://*/*", 
+    "tabs", 
+    "notifications", 
+    "clipboardWrite"
+  ]
+}
